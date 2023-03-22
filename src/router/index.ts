@@ -9,7 +9,7 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView
   },
   {
-    path: 'add-task',
+    path: '/add-task',
     name: 'add-task',
     component: AddTaskVue
   }
