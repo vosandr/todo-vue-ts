@@ -31,13 +31,14 @@ export default defineComponent({
     methods: {
         ...mapMutations(['addTask']),
         onSubmit(){
+            const id=(new Date()).getTime();
             const newTask : Task = {
-                id: (new Date()).getTime(),
+                id: id,
                 name: this.taskName,
                 description: this.taskDescription
             }
-            this.addTask()
-            console.log(this.taskName, this.taskDescription)
+            this.addTask(newTask)
+            this.$router.push(`/task/${id}`)
         }
     }
 })
