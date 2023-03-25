@@ -22,7 +22,7 @@ import { Task } from '@/types/storeType';
 
 export default defineComponent({
     name: "AddTaskView",
-    data: ()=>{
+    data: () => {
         return{
             taskName:'',
             taskDescription:''
@@ -37,7 +37,8 @@ export default defineComponent({
                 name: this.taskName,
                 description: this.taskDescription
             }
-            this.addTask(newTask)
+            this.addTask(newTask);
+
             this.$router.push(`/task/${id}`)
         }
     }

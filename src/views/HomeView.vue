@@ -1,5 +1,5 @@
 <template>
-  <div class="Home">
+  <div class="home">
     <div v-for="task in tasks" :key="task.id">
       <h4>
         <router-link :to="`/task/${task.id}`">{{ task.name }}</router-link>
