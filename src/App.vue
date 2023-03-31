@@ -1,6 +1,6 @@
-<template>
-  <Menu />
-  <router-view/>
+<template lang="pug">
+Menu
+  router-view
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";

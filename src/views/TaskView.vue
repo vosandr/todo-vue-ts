@@ -1,8 +1,6 @@
-<template>
-    <h1>{{ task.name }}</h1>
-    <div>
-        {{ task.description }}
-    </div>
+<template lang="pug">
+h1 {{ task.name }}
+    div {{ task.description }}
 </template>
 
 <script lang="ts">

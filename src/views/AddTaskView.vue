@@ -1,18 +1,12 @@
-<template>
-    <h1>Создание задачи</h1>
-    <form>
-        <div class="form_element">
-            <input v-model="taskName" placeholder="Название задачи" /> 
-        </div>
-        <div class="form_element">
-            <textarea v-model="taskDescription" placeholder="Описание задачи">
-
-            </textarea>
-        </div>
-        <div class="form_element" @click="onSubmit">
-            <button type="button">Создать</button>
-        </div>
-    </form>
+<template lang="pug">
+h1 Создание задачи
+    form
+        .form_element
+            input(v-model="taskName" placeholder="Название задачи")
+        .form_element
+            textarea(v-model="taskDescription" placeholder="Описание задачи")
+        .form_element(@click="onSubmit")
+        button(type="button") Создать
 </template>
 
 <script lang="ts">

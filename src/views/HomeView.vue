@@ -1,12 +1,9 @@
-<template>
-  <div class="home">
-    <div v-for="task in tasks" :key="task.id">
-      <h4>
-        <router-link :to="`/task/${task.id}`">{{ task.name }}</router-link>
-      </h4>
-    </div>
-    <div v-if="tasks.length===0">Задач не найдено</div>
-  </div>
+<template lang="pug">
+.home
+  div (v-for="task in tasks" :key="task.id")
+    h4
+      router-link(:to="`/task/${task.id}`") {{ task.name }}
+  div (v-if="tasks.length===0") Задач не найдено
 </template>
 
 <script lang="ts">
